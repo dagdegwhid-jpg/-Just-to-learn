@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+h1{
+	text-align: center;color: brown;
+}
+img{width:400px;height:500px;display:block;margin:auto;
+animation-delay: 1s;animation-duration: 0.5s;animation-name: image;animation-iteration-count: infinite;}
+p{animation-delay: 1s;animation-duration: 2s;animation-name: glissement;animation-iteration-count: infinite;}
+
+.aller,img{color:aqua;animation-direction: normal;}
+.retour{color: green;animation-direction: reverse;}
+@keyframes glissement{
+	from{margin-left: 100%;width:300%}
+}
+to{margin-left: 0%;width: 100%;}
+@keyframes image{
+	0%{transform: scale(1);}
+	50%{transform: scale(1.2);}
+	100%{transform: scale(1);}
+}
+
+		
+		
+
+
+
+
+
+
